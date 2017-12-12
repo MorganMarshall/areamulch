@@ -1,0 +1,192 @@
+<div class="center-align">
+  <a id="calcbtn" class="waves-effect waves-light btn modal-trigger teal darken-4" href="#modal2">Product Calculator</a>
+</div>
+
+<!-- Modal Structure -->
+<div>
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+
+
+
+
+
+
+      <form>
+        <p><b><font size="4">Gravel drive ways use 10 ft. for width / Rectangular/Square Beds</font></b></p>
+        <table height="184" border="1">
+          <tr>
+            <td height="24">
+              <font face="Times New Roman" size="5">How wide is the area? (in feet)<input onfocus="clear_form(this.form)" size="4" name="width"></font>
+            </td>
+          </tr>
+          <tr>
+            <td height="24">
+              <font face="Times New Roman" size="5">How long is the area? (in feet)<input onfocus="clear_form(this.form)" size="4" name="length"></font>
+            </td>
+          </tr>
+          <tr>
+            <td height="24">
+              <font face="Times New Roman" size="5">How thick (deep) do you want to fill (in inches)?<input onfocus="clear_form(this.form)" size="4" name="depth"></font>
+            </td>
+          </tr>
+          <tr>
+            <td height="24">
+              <font face="Times New Roman" size="5">What type of material do you want?
+
+                <select class="browser-default" size="1" name="material" multiple>
+            <option value="1" selected>Mulch</option>
+            <option value="1">TopSoi l- Clay</option>
+            <option value="1">Raised - Bed Mix</option>
+            <option value="1.25">Sand</option>
+            <option value="1.50">Gravel # 57</option>
+            <option value="1.50">Gravel 67</option>
+            <option value="1.75">Gravel #78</option>
+            <option value="1.85">Crush &amp; Run or ABC</option>
+            <option value="1.95">Screening or rock dust</option>
+            <option value="1.025">Brick Chips 3/4</option>
+            <option value="1.50">Surge stone</option>
+            <option value="1.59">#4 /2 inch River bed</option>
+            <option value="1.35">#5 gravel</option>
+            <option value="1.25">Rip Rap Class B</option>
+            </select>
+
+              </font>
+              <font size="5">&nbsp; </font>
+              <p>&nbsp;</p>
+
+            </td>
+          </tr>
+          <tr>
+            <td align="middle" height="28">
+              <p align="left">
+                <font face="Times New Roman" size="5">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input onclick="process_rect_form(this.form)" type="button" value="Calculate Material" class="style1 btn"></font>
+            </td>
+          </tr>
+          <tr>
+            <td align="middle" height="24">
+              <font face="Times New Roman" size="5">
+                You'll need <input onfocus="this.blur()" size="4" name="needed">
+                <input onfocus="this.blur()" size="10" name="tons_or_yards"> for your project.
+              </font>
+            </td>
+          </tr>
+        </table>
+      </form>
+
+      <p>&nbsp;</p>
+      <!-- circlular area calc -->
+      <form>
+        <p><b><font size="5">Circular Beds</font></b></p>
+        <table height="184" border="1">
+          <tr>
+            <td height="24">
+              <font face="Times New Roman" size="5">What is the diameter? (in feet)
+                <input onfocus="clear_form(this.form)" size="4" name="diameter"></font>
+            </td>
+          </tr>
+          <tr>
+            <td height="24">
+              <font face="Times New Roman" size="5">How thick (deep) do you want to fill (in inches)?<input onfocus="clear_form(this.form)" size="4" name="depth"></font>
+            </td>
+          </tr>
+          <tr>
+            <td height="24">
+              <font face="Times New Roman" size="5">What type of material do you want? <select class="browser-default" size="1" name="material">
+            <option value="1" selected>Mulch</option>
+            <option value="1.75">78</option>
+            <option value="1.59">#4 /2 inch River bed</option>
+            <option value="1.025">Brick Chips 3/4</option>
+            <option value="1.35">#5 gravel</option>
+            <option value="1">Soil</option>
+            <option value="1.95">Sand</option>
+            <option value="1.85">Crush &amp; Run or ABC</option>
+            <option value="1.50">Gravel # 57,67</option>
+            <option value="1">soil-mixes</option>
+            </select></font>
+              <font size="5"> </font>
+              <p>&nbsp;</p>
+            </td>
+          </tr>
+          <tr>
+            <td align="middle" height="28">
+              <p align="left">
+                <font face="Times New Roman" size="5">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input onclick="process_round_form(this.form)" type="button" value="Calculate Material" class="style1 btn"></font>
+            </td>
+          </tr>
+          <tr>
+            <td align="middle" height="24">
+              <font face="Times New Roman" size="5">
+                You'll need <input onfocus="this.blur()" size="4" name="needed">
+                <input onfocus="this.blur()" size="10" name="tons_or_yards"> for your project.
+              </font>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <p>&nbsp;</p>
+      <!-- triangle  area calc -->
+      <form>
+        <p><b><font size="5">Triangle Beds</font></b>
+          <font size="5"> (Measure the two sides that meet at the 90° angle)</font>
+        </p>
+        <table height="184" border="1">
+          <tr>
+            <td height="24">
+              <font face="Times New Roman" size="5">What is length of the first side? (in feet)
+                <input onfocus="clear_form(this.form)" size="4" name="side_one"></font>
+            </td>
+          </tr>
+          <tr>
+            <td height="24">
+              <font face="Times New Roman" size="5">What is length of the second side? (in feet)
+                <input onfocus="clear_form(this.form)" size="4" name="side_two"></font>
+            </td>
+          </tr>
+          <tr>
+            <td height="24">
+              <font face="Times New Roman" size="5">How thick (deep) do you want to fill (in inches)?<input onfocus="clear_form(this.form)" size="4" name="depth"></font>
+            </td>
+          </tr>
+          <tr>
+            <td height="24">
+              <font face="Times New Roman" size="5">What type of material do you want? <select class="browser-default" size="1" name="material">
+            <option value="1" selected>Mulch</option>
+            <option value="1.59">#4 /2 inch River bed</option>
+            <option value="1.025">Brick Chips 3/4</option>
+            <option value="1.35">#5 gravel</option>
+            <option value="1">Soil</option>
+            <option value="1.25">Sand</option>
+            <option value="1.65">Crush &amp; Run or ABC</option>
+            <option value="1.35">Gravel # 57,67</option>
+            <option value="1">soil-mixes</option>
+            </select></font>
+              <font size="5"> </font>
+              <p>&nbsp;</p>
+            </td>
+          </tr>
+          <tr>
+            <td align="middle" height="28">
+              <p align="left">
+                <font face="Times New Roman" size="5">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input onclick="process_triangle_form(this.form)" type="button" value="Calculate Material" class="style1 btn"></font>
+            </td>
+          </tr>
+          <tr>
+            <td align="middle" height="24">
+              <font face="Times New Roman" size="5">
+                You'll need <input onfocus="this.blur()" size="4" name="needed">
+                <input onfocus="this.blur()" size="10" name="tons_or_yards"> for your project.
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Back</a>
+    </div>
+  </div>
+
+</div>
