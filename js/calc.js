@@ -1,4 +1,4 @@
-// <![CDATA[  <-- For SVG support
+
 if ('WebSocket' in window) {
   (function() {
     function refreshCSS() {
@@ -25,7 +25,6 @@ if ('WebSocket' in window) {
     console.log('Live reload enabled.');
   })();
 }
-// ]]>
 
 
 
@@ -35,7 +34,8 @@ if ('WebSocket' in window) {
 
 
 
-<!-- Volume / Area conversion calculator
+
+
 function process_rect_form(form) {
   var firstvalue = 0;
 
@@ -193,4 +193,4 @@ function clear_form(form) {
   for (var i = 1; i <= form.count; i++) form.elements[i].value = "";
   return true;
 }
-<!-- done hiding from old browsers -->
+
