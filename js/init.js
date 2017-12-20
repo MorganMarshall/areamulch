@@ -7,7 +7,7 @@ $(document).ready(function() {
  $('#contact').load('components/contact.html')
   $('#calculator').load('components/calculator.html')
  $('#footer').load('components/footer.html')
-
+ $('.modal').modal();
 
 
 
